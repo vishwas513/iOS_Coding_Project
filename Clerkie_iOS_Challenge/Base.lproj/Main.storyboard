@@ -152,13 +152,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-3d-5cX">
-                                <rect key="frame" x="153" y="53" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zg1-Zf-yhd">
                                 <rect key="frame" x="111" y="628" width="153" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -170,11 +163,47 @@
                                     <action selector="segment:" destination="sgz-8P-5bu" eventType="valueChanged" id="PbT-hA-PQo"/>
                                 </connections>
                             </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qSB-sk-ZBs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-Tl-2Iu" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="76" width="375" height="181"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18Z-xy-N5K" customClass="HorizontalBarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="285" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-FB-O2b" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="515" width="375" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-3d-5cX">
+                                <rect key="frame" x="153" y="53" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qSB-sk-ZBs" firstAttribute="top" secondItem="jiP-4X-dP8" secondAttribute="top" id="2oK-Lz-gFa"/>
+                            <constraint firstItem="qSB-sk-ZBs" firstAttribute="trailing" secondItem="LOt-U6-UTT" secondAttribute="trailing" id="H2Q-Sk-Bal"/>
+                            <constraint firstItem="qSB-sk-ZBs" firstAttribute="bottom" secondItem="LOt-U6-UTT" secondAttribute="bottom" id="Pau-2N-4a4"/>
+                            <constraint firstItem="qSB-sk-ZBs" firstAttribute="leading" secondItem="LOt-U6-UTT" secondAttribute="leading" id="oug-js-WJB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LOt-U6-UTT"/>
                     </view>
                     <connections>
+                        <outlet property="barChart" destination="AM4-Tl-2Iu" id="iCj-XY-ID0"/>
+                        <outlet property="horizontalBarChart" destination="18Z-xy-N5K" id="iiA-H1-ntM"/>
+                        <outlet property="lineChart" destination="gOE-FB-O2b" id="jsN-ck-t8B"/>
                         <outlet property="segment" destination="zg1-Zf-yhd" id="Ukd-v1-xCA"/>
                     </connections>
                 </viewController>
