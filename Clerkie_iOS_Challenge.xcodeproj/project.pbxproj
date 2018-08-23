@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		013A72F5BEBA202CBFB17947 /* Pods_Clerkie_iOS_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05471BD46699E378F0D07AA8 /* Pods_Clerkie_iOS_Challenge.framework */; };
+		E92824D4212DEE8200D8BB05 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92824D3212DEE8200D8BB05 /* MessageCell.swift */; };
 		E98635CC212B7D13008FD452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98635CB212B7D13008FD452 /* AppDelegate.swift */; };
 		E98635CE212B7D13008FD452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98635CD212B7D13008FD452 /* ViewController.swift */; };
 		E98635D1212B7D13008FD452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98635CF212B7D13008FD452 /* Main.storyboard */; };
@@ -20,6 +21,10 @@
 		E98635FF212BC910008FD452 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98635FE212BC910008FD452 /* constants.swift */; };
 		E9863603212C87FB008FD452 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9863602212C87FB008FD452 /* ChatViewController.swift */; };
 		E9863605212CAA11008FD452 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9863604212CAA11008FD452 /* DashboardViewController.swift */; };
+		E9863607212CEF84008FD452 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9863606212CEF84008FD452 /* GoogleService-Info.plist */; };
+		E986360A212CF75A008FD452 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9863609212CF75A008FD452 /* AuthService.swift */; };
+		E986360C212CFF98008FD452 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986360B212CFF98008FD452 /* DataService.swift */; };
+		E986360E212D0068008FD452 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986360D212D0068008FD452 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,7 @@
 		0BEBAEECB8E755AE8B739481 /* Pods-Clerkie_iOS_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie_iOS_Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie_iOS_Challenge/Pods-Clerkie_iOS_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		54F0C5E72322A6E7D70F5ED6 /* Pods_Clerkie_iOS_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75156DC9B05E76C68AEF4BBC /* Pods-Clerkie_iOS_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie_iOS_Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie_iOS_Challenge/Pods-Clerkie_iOS_Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		E92824D3212DEE8200D8BB05 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E98635C8212B7D13008FD452 /* Clerkie_iOS_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clerkie_iOS_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98635CB212B7D13008FD452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E98635CD212B7D13008FD452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,10 @@
 		E98635FE212BC910008FD452 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		E9863602212C87FB008FD452 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E9863604212CAA11008FD452 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E9863606212CEF84008FD452 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9863609212CF75A008FD452 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E986360B212CFF98008FD452 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		E986360D212D0068008FD452 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		ED7EF42991E22862ACE15659 /* Pods_Clerkie_iOS_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +145,8 @@
 		E98635CA212B7D13008FD452 /* Clerkie_iOS_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				E9863608212CF742008FD452 /* Services */,
+				E9863606212CEF84008FD452 /* GoogleService-Info.plist */,
 				E9863601212C87B5008FD452 /* ViewControllers */,
 				E9863600212BC918008FD452 /* Model */,
 				E98635CB212B7D13008FD452 /* AppDelegate.swift */,
@@ -170,6 +182,8 @@
 			children = (
 				E98635FC212BB59B008FD452 /* networkHandler.swift */,
 				E98635FE212BC910008FD452 /* constants.swift */,
+				E986360D212D0068008FD452 /* Message.swift */,
+				E92824D3212DEE8200D8BB05 /* MessageCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +198,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		E9863608212CF742008FD452 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9863609212CF75A008FD452 /* AuthService.swift */,
+				E986360B212CFF98008FD452 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +218,7 @@
 				E98635C4212B7D13008FD452 /* Sources */,
 				E98635C5212B7D13008FD452 /* Frameworks */,
 				E98635C6212B7D13008FD452 /* Resources */,
+				532BAAE067AD2C7D8CFB3226 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98635D9212B7D15008FD452 /* LaunchScreen.storyboard in Resources */,
+				E9863607212CEF84008FD452 /* GoogleService-Info.plist in Resources */,
 				E98635D6212B7D15008FD452 /* Assets.xcassets in Resources */,
 				E98635D1212B7D13008FD452 /* Main.storyboard in Resources */,
 			);
@@ -330,6 +355,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		532BAAE067AD2C7D8CFB3226 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie_iOS_Challenge/Pods-Clerkie_iOS_Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie_iOS_Challenge/Pods-Clerkie_iOS_Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,13 +388,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92824D4212DEE8200D8BB05 /* MessageCell.swift in Sources */,
+				E986360C212CFF98008FD452 /* DataService.swift in Sources */,
 				E98635D4212B7D13008FD452 /* Clerkie_iOS_Challenge.xcdatamodeld in Sources */,
 				E9863605212CAA11008FD452 /* DashboardViewController.swift in Sources */,
 				E98635CE212B7D13008FD452 /* ViewController.swift in Sources */,
 				E98635CC212B7D13008FD452 /* AppDelegate.swift in Sources */,
 				E98635FF212BC910008FD452 /* constants.swift in Sources */,
 				E9863603212C87FB008FD452 /* ChatViewController.swift in Sources */,
+				E986360E212D0068008FD452 /* Message.swift in Sources */,
 				E98635FD212BB59B008FD452 /* networkHandler.swift in Sources */,
+				E986360A212CF75A008FD452 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

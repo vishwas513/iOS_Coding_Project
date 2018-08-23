@@ -8,5 +8,9 @@ target 'Clerkie_iOS_Challenge' do
   use_frameworks!
 
   # Pods for Clerkie_iOS_Challenge
-    
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Charts'
+
 end

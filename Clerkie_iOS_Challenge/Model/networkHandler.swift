@@ -12,14 +12,15 @@ class networkHandler {
     func getLogin(userName:String,password:String, completionHandler: @escaping (_ loginStatus: Bool) -> ()){
         //https://api.mlab.com/api/1/databases/application_data/collections/Users?q={"userName": "admin"}&apiKey=NOGVone7rgDPU_YxPvDFgqgeYiGQlTxs
       //  let url = NSURL(string: constants().baseUrl + "/" + constants().loginCollection + "collections/Users?q={" + \"userName",\ + ":" + userName as! String);!
-      // stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQue‌​ryAllowedCharacterSet())
-        let urlString = constants().baseUrl + constants().loginCollection + "?q=" + "{\"userName\":\"" + userName + "\",\"password\"" + password + "\"}&apiKey=" + constants().apiKey;
+     
+        let urlString:String = constants().baseUrl + constants().loginCollection + "?q=" + "{\"userName\":\"" + userName + "\",\"password\"" + password + "\"}&apiKey=" + constants().apiKey;
+        let url2 = "https://api.mlab.com/api/1/databases/application_da"
         
-        let url = URL(string: urlString);
-        print(urlString);
+        let urlLogin = URL(string: url2);
+        print(urlString,urlLogin);
         
         //Creating the Request Object with options
-        let request = NSMutableURLRequest(url: url as! URL)
+        let request = NSMutableURLRequest(url: urlLogin as! URL)
         request.httpMethod = "GET"
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         
